@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="databaseConn" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraAttachmentEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueCommentEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueTypeEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraPriorityEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraProjectEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraResolutionEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraStatusEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraUserEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraComponentEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueLinkTypeEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraVersionEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueComponentEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueFixVersionEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraIssueLinkEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraWorklogEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraChangeGroupEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraChangeItemEntity</class>
+        <class>eu.jmlabs.research.jiraRESTparser.entity.JiraSubtaskEntity</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/database?useUnicode=yes&amp;characterEncoding=utf8"/>
+        <property name="javax.persistence.jdbc.user" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="root"/>
+        <!--<property name="eclipselink.logging.level.sql" value="FINE"/>
+        <property name="eclipselink.logging.parameters" value="true"/> -->
+    </properties>
+    </persistence-unit>
+
+</persistence>
